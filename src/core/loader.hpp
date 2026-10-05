@@ -467,6 +467,7 @@ class Loader : public modloader_t
         
     protected:
         friend struct Updating;
+        friend struct MenuApi;          // extras/api.cpp
         friend struct scoped_gdir;
         friend class  TheMenu;
 
