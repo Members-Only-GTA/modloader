@@ -18,10 +18,10 @@ using namespace modloader;
 struct MenuApi
 {
     static Loader::FolderInformation& Mods()  { return loader.mods; }
-    static bool& EnableLog()                  { return MenuApi::EnableLog(); }
-    static bool& ImmediateFlush()             { return MenuApi::ImmediateFlush(); }
-    static uint64_t& MaxBytesInLog()          { return MenuApi::MaxBytesInLog(); }
-    static bool& AutoRefresh()                { return MenuApi::AutoRefresh(); }
+    static bool& EnableLog()                  { return loader.bEnableLog; }
+    static bool& ImmediateFlush()             { return loader.bImmediateFlush; }
+    static uint64_t& MaxBytesInLog()          { return loader.maxBytesInLog; }
+    static bool& AutoRefresh()                { return loader.bAutoRefresh; }
 };
 
 namespace
